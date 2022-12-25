@@ -1,0 +1,6 @@
+{
+    "distance": 2000,
+    "column_to_convert":["arr_time", "distance"],
+    "originPlace": "PDX"
+    
+}
