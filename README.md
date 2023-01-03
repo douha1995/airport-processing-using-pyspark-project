@@ -5,3 +5,12 @@
     - how to pass configuration parameters to a PySpark job;
     - how to handle dependencies on other modules and packages; and,
     what constitutes a 'meaningful' test for an ETL job.
+
+## Runing ETL Job
+    <code>
+    $SPARK_HOME/bin/spark-submit \
+    --master local[*] \
+    --py-files packages.zip \
+    --files configs/etl_config.json \
+    jobs/etl.py
+    </code>
