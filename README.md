@@ -7,10 +7,9 @@
     what constitutes a 'meaningful' test for an ETL job.
 
 ## Runing ETL Job
-    <code>
+Assuming that the $SPARK_HOME environment variable points to your local Spark installation folder, then the ETL job can be run from the project's root directory using the following command from the terminal,
     $SPARK_HOME/bin/spark-submit \
     --master local[*] \
     --py-files packages.zip \
     --files configs/etl_config.json \
     jobs/etl.py
-    </code>
